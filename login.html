@@ -28,7 +28,7 @@
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
-        <form action="index2.html" method="post">
+        <form action="index.html" method="post">
           <div class="form-group has-feedback">
             <input type="email" class="form-control" placeholder="Email" id="email" />
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -79,11 +79,12 @@
         $('#submit').on('click', function(){
             $email = $('#email').val();
             $pass  = $('#pass').val();
-            if($email === 'admin@aiko.com' && $pass === '123456'){
-              window.location = 'index.html';
+            if($email == 'admin@aiko.com' && $pass == '123456'){
+                return true;
+            }else {
+                alert("Invalid email or password!");
+                return false;
             }
-            alert("Invalid email or password!");
-            return false;
         });
       });
     </script>
