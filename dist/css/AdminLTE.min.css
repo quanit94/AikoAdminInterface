@@ -31,3 +31,10 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-f
 	max-height: 500px;
 	overflow:auto; 
 }
+
+.report, .report-forget-pass{
+	width: 100%;
+	height: auto;
+	color:red;
+}
+
